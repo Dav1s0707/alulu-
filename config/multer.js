@@ -30,7 +30,7 @@ var upload = multer({
             return cb(new Error('Tipo de arquivo inválido'))
         }
     },
-    limits:{fileSize:100}
+    limits:{fileSize:1000}
 
 }).single('imagem')
 
