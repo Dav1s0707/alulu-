@@ -1,0 +1,50 @@
+html{
+  height:  100%;
+}
+
+body{
+  background-size: 100%;
+}
+
+a{
+    color: rgb(58, 206, 13);
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+}
+
+.night{
+    background-image: url('https://c.tenor.com/3YaztZFL3oEAAAAC/yoshi-yoshi-dan%C3%A7ando.gif');
+}
+
+.back2{
+    background-image: url('https://i.gifer.com/Gk3.gif');
+    background-size: cover;
+    color: #e62786;
+}
+
+.back3{
+    background-image: url('https://c.tenor.com/mpkkLgdUj14AAAAd/dame-tu-cosita-dance.gif');
+    background-size: cover;
+    color: #00ffff;
+}
+
+div{
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+.grupo button{
+    border: 0.1rem solid #000000;
+    background: none;
+    margin: 5px;
+    color: #00ccff;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+
+.grupo button:hover{
+    background: #ffffff;
+    color: #0a1128;
+}

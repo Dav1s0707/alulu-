@@ -1,0 +1,125 @@
+:root{
+    --clr-neon: hsl(217 100% 54%);
+    --clr-bg: hsl(223 21% 16%);
+    --clr-neon2: hsl(517 100% 54%);
+    --clr-bg2: hsl(523 21% 16%)
+
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+
+
+.neon-button{
+    color: var(--clr-neon);
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: var(--clr-neon) .125em solid;
+    padding: .25em 1em;
+    border-radius: 0.25em;
+    text-shadow:    
+    1px 1px .090em rgb(19, 94, 163),
+    0px 0px .050em rgb(255, 255, 255),
+    0 0 .45em currentColor;
+
+    box-shadow: inset 0 0 .7em 0 var(--clr-neon),
+    0 0 .7em 0 var(--clr-neon);
+
+    position: relative;
+    transition: background-color 100ms linear;
+}
+
+
+
+.neon-button::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;  
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon);
+    opacity: 0;
+    transition: opacity 100ms linear;
+    background: var(--clr-neon);
+    z-index: -1;
+
+}
+
+.neon-button:hover, .neon-button:focus{
+    color: var(--clr-bg);
+    text-shadow: none;
+    
+}
+
+.neon-button:hover::before, .neon-button:focus::before{
+    opacity: 1;
+}
+.neon-button:hover::after, .neon-button:focus::after{
+    opacity: 1;
+}
+
+
+
+
+
+
+.neon-button2{
+    color: var(--clr-neon2);
+    font-size: 1rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: var(--clr-neon2) .125em solid;
+    padding: .25em 1em;
+    border-radius: 0.25em;
+    text-shadow:    
+    1px 1px .090em rgb(5, 35, 37),
+    0px 0px .050em rgb(255, 255, 255),
+    0 0 .45em currentColor;
+
+    box-shadow: inset 0 0 .7em 0 var(--clr-neon2),
+    0 0 .7em 0 var(--clr-neon2);
+
+    position: relative;
+    transition: background-color 100ms linear;
+}
+
+
+
+.neon-button2::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;  
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 2em 0.5em var(--clr-neon2);
+    opacity: 0;
+    transition: opacity 100ms linear;
+    background: var(--clr-neon2);
+    z-index: -1;
+
+}
+
+.neon-button2:hover, .neon-button2:focus{
+    color: var(--clr-bg2);
+    text-shadow: none;
+    
+}
+
+.neon-button2:hover::before, .neon-button2:focus::before{
+    opacity: 1;
+}
+.neon-button2:hover::after, .neon-button2:focus::after{
+    opacity: 1;
+}
+
+
+
